@@ -1,0 +1,18 @@
+{
+  "product_id": "JLZ-EDU-AG-012",
+  "repository_name": "edu-timetable-conflict-diagnosis-agent",
+  "product_type": "Agent",
+  "version": "1.0.0",
+  "package_path": "dist/edu-timetable-conflict-diagnosis-agent-v1.0.0.zip",
+  "sha256": "80E72C87A4AC21920018D511D173ABE6738A41405852B1F1290F7025612A3724",
+  "bytes": 11634,
+  "entries": [
+    "edu-timetable-conflict-diagnosis-agent/.codebuddy-plugin/plugin.json",
+    "edu-timetable-conflict-diagnosis-agent/agents/edu-timetable-conflict-diagnosis-agent.md",
+    "edu-timetable-conflict-diagnosis-agent/avatars/expert.png",
+    "edu-timetable-conflict-diagnosis-agent/README.md"
+  ],
+  "built_at": "2026-11-06T22:20:31.6830544+08:00",
+  "status": "PACKAGE_READY",
+  "workbuddy_validation": "NOT_VERIFIED"
+}

@@ -1,0 +1,24 @@
+{
+  "number": 57,
+  "product_id": "JLZ-EDU-AG-012",
+  "chinese_name": "排课冲突诊断",
+  "english_name": "Timetable Conflict Diagnosis Agent",
+  "repository_name": "edu-timetable-conflict-diagnosis-agent",
+  "product_type": "Agent",
+  "category": "04 教务运营中心",
+  "version": "1.0.0",
+  "status": "PACKAGE_READY",
+  "workbuddy_validation": "NOT_VERIFIED",
+  "license": "Apache-2.0",
+  "baseline_tag": "education-product-baseline-v1.0.0",
+  "package_path": "dist/edu-timetable-conflict-diagnosis-agent-v1.0.0.zip",
+  "calculator": false,
+  "core_input": "课表、约束、冲突报告、优先级、可用资源和调整权限",
+  "main_output": "冲突根因、影响范围、替代方案比较、推荐方案和人工确认单",
+  "package_entries": [
+    "edu-timetable-conflict-diagnosis-agent/.codebuddy-plugin/plugin.json",
+    "edu-timetable-conflict-diagnosis-agent/agents/edu-timetable-conflict-diagnosis-agent.md",
+    "edu-timetable-conflict-diagnosis-agent/avatars/expert.png",
+    "edu-timetable-conflict-diagnosis-agent/README.md"
+  ]
+}

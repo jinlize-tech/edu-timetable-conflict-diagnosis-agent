@@ -1,0 +1,63 @@
+{
+  "name": "edu-timetable-conflict-diagnosis-agent",
+  "version": "1.0.0",
+  "description": "Multi-step education operations assistant for Timetable Conflict Diagnosis Agent.",
+  "author": {
+    "name": "广州金励泽科技服务有限公司",
+    "email": "270911570+yangsongbaofu-dot@users.noreply.github.com"
+  },
+  "agents": [
+    "./agents/edu-timetable-conflict-diagnosis-agent.md"
+  ],
+  "expertType": "agent",
+  "agentName": "edu-timetable-conflict-diagnosis-agent",
+  "displayName": {
+    "en": "Timetable Conflict Diagnosis Agent",
+    "zh": "排课冲突诊断"
+  },
+  "profession": {
+    "en": "Timetable Conflict Diagnosis Agent",
+    "zh": ""
+  },
+  "displayDescription": {
+    "en": "A multi-step education agent for Timetable Conflict Diagnosis Agent, producing reviewable plans with human checkpoints.",
+    "zh": "提供排课冲突诊断专业协作，完成多步骤分析、方案设计与复盘，输出可执行成果并保留人工确认。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "Help me complete Timetable Conflict Diagnosis Agent.",
+    "zh": "请帮我完成一次排课冲突诊断"
+  },
+  "plugin": "edu-timetable-conflict-diagnosis-agent",
+  "tags": [
+    {
+      "en": "Academic Operations",
+      "zh": "教务运营"
+    },
+    {
+      "en": "Campus Management",
+      "zh": "校区管理"
+    },
+    {
+      "en": "Education",
+      "zh": "教培机构"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Help me complete Timetable Conflict Diagnosis Agent.",
+      "zh": "请帮我完成一次排课冲突诊断"
+    },
+    {
+      "en": "Diagnose my supplied education-business information and propose next steps.",
+      "zh": "请诊断我提供的业务资料并给出下一步行动"
+    },
+    {
+      "en": "Generate 冲突根因、影响范围、替代方案比较、推荐方案和人工确认单 with risks and open questions.",
+      "zh": "请生成冲突根因、影响范围、替代方案比较、推荐方案和人工确认单，并列出风险与待确认事项"
+    }
+  ],
+  "homepage": "https://github.com/jinlize-tech/edu-timetable-conflict-diagnosis-agent",
+  "license": "Apache-2.0"
+}
