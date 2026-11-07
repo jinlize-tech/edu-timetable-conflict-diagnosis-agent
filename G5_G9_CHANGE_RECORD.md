@@ -1,35 +1,45 @@
-# G5/G9 产品修改记录
+# G5/G9-R2 产品修改记录
 
-- 产品编号：$(@{number=57; product_id=JLZ-EDU-AG-012; chinese_name=排课冲突诊断; english_name=Timetable Conflict Diagnosis Agent; repository_name=edu-timetable-conflict-diagnosis-agent; repository_url=https://github.com/jinlize-tech/edu-timetable-conflict-diagnosis-agent; product_type=Agent; category_code=04; category=04 教务运营中心; description=排课冲突诊断和替代方案。; target_users=System.Object[]; core_input=课表、约束、冲突报告、优先级、可用资源和调整权限; main_output=冲突根因、影响范围、替代方案比较、推荐方案和人工确认单; product_risk=忽略硬约束或未经授权自动重排; dedup_label=需要明确差异化; dedup_note=与智能排课区别：对已有冲突做诊断和比较；不生成完整初始排课。; development_status=Planned / 待研发; license=Apache-2.0; spec_version=1.0.0; workbuddy_status=PLANNED_FOR_WORKBUDDY}.product_id)
-- 产品名称：排课冲突诊断
-- 基线：EDUCATION_BASELINE_V1.0.0
-- 基线提交：$BaselineCommit
-- 原版本：1.0.0
-- 新版本：1.0.1
+- 产品编号：`JLZ-EDU-AG-012`
+- 中文名称：`排课冲突诊断`
+- 英文名称：`Timetable Conflict Diagnosis Agent`
+- 产品类型：`Agent`
+- GitHub仓库：`https://github.com/jinlize-tech/edu-timetable-conflict-diagnosis-agent`
+- 1.0.0冻结基线：`EDUCATION_BASELINE_V1.0.0`
+- 1.0.0基线Commit：`c03018878846f3920482be4de8139d9fb5fe34ee`
+- 1.0.1原版本Commit：`6fd09e6e4c0835dd3d1d70afa136869df261c5be`
+- 1.0.2实施Commit：`PENDING_IMPLEMENTATION_COMMIT`
+- 1.0.2最终证据Commit：`由 product-v1.0.2 Tag 指向的最新证据提交`
+- 新版本：`1.0.2`
 
-## 本次修改
+## 1.0.2 变更内容
 
-1. 强化产品专属执行流程、输入核对和输出验收规则。
-2. 新增 scripts/validate_input.js，实际检查必填字段、冲突、未确认数据和敏感信息。
-3. 新增正常、缺失、冲突、敏感信息和非法JSON场景输入。
-4. 测试升级为 T1–T7 分层并保存逐项检查结果。
-5. 安装包加入 Apache-2.0 LICENSE 和 THIRD_PARTY_NOTICES.md。
-6. 安装包升级为 1.0.1，加入许可证、第三方声明和输入校验脚本，保留 1.0.0 ZIP。
-7. 按本产品冻结规格补充专属处理规则、输入到成果的核对矩阵和去重边界。
+- 补齐并统一 Agent 中文职业身份为「排课冲突诊断专家」。
+2. 统一 plugin.json、Agent Front Matter、product_meta 和安装包内容。
+3. 本轮无业务逻辑功能变更；属于元数据、证据和发布版本维护。
+4. 补充 BASELINE_VERSION.md 的产品身份信息，不修改历史冻结内容和基线 Tag。
+5. 重新生成 1.0.2 安装包、package-manifest、测试证据和 SHA-256。
 
-## 产品专属增强
+## 实际修改文件
 
-- 核心任务：排课冲突诊断和替代方案。
-- 主要风险：忽略硬约束或未经授权自动重排
-- 去重边界：与智能排课区别：对已有冲突做诊断和比较；不生成完整初始排课。
+- `VERIFICATION_PENDING`
 
-- 先提取班级、教师、教室、时间、学生约束和硬性规则，再生成排程草案。
-- 硬冲突不得被软约束覆盖；无法消解时列出冲突、影响和升级责任人。
-- 所有变更保留原状态、目标状态、生效时间和回退方式。
-- 正式课表、考勤和审批结果必须由有权限人员确认后生效。
+## 测试项目与结果
+
+- 总测试状态：`VERIFICATION_PENDING`
+
+| 测试层 | 结果 |
+|---|---|
+| T1-T7 | VERIFICATION_PENDING |
+
+## 安装包
+
+- 路径：`dist/edu-timetable-conflict-diagnosis-agent-v1.0.2.zip`
+- SHA-256：`7A6F5D6AA8E92AE8700BDB9F748F90FA49361E7BC3E72EDE1647C853468B372C`
 
 ## 运行边界
 
-- 本地模型行为：NOT_RUNTIME_VERIFIED
-- WorkBuddy平台验证：WORKBUDDY_VALIDATION_NOT_IN_SCOPE
+- 模型真实运行：`MODEL_RUNTIME_NOT_VERIFIED`
+- WorkBuddy平台验证：`WORKBUDDY_VALIDATION_NOT_IN_SCOPE`
 - 本轮不执行上传、安装、审核或正式发布。
+

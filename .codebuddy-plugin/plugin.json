@@ -1,6 +1,6 @@
 {
   "name": "edu-timetable-conflict-diagnosis-agent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Multi-step education operations assistant for Timetable Conflict Diagnosis Agent.",
   "author": {
     "name": "广州金励泽科技服务有限公司",
@@ -17,7 +17,7 @@
   },
   "profession": {
     "en": "Timetable Conflict Diagnosis Agent",
-    "zh": ""
+    "zh": "排课冲突诊断专家"
   },
   "displayDescription": {
     "en": "A multi-step education agent for Timetable Conflict Diagnosis Agent, producing reviewable plans with human checkpoints.",

@@ -6,7 +6,7 @@ displayName:
   zh: '排课冲突诊断'
 profession:
   en: 'Timetable Conflict Diagnosis Agent'
-  zh: ''
+  zh: '排课冲突诊断专家'
 maxTurns: 50
 ---
 
